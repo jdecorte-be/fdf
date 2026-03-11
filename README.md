@@ -1,62 +1,71 @@
-# 42-FdF
+![FdF Banner](assets/banner.png)
 
-## Overview
+FdF, or *Fil de Fer* (Wireframe), is a graphics programming project from the 42 school curriculum. The goal is to render a 3D wireframe landscape from a 2D map of height data. This project develops core skills in 3D graphics, including projections, transformations, and window management using a graphics library.
 
-The 42-FdF project is part of the 42 school's curriculum, focusing on graphics programming. The objective is to develop a program that reads a file containing a grid of height values and generates a 3D wireframe representation of the corresponding landscape. This project enhances understanding of 3D projections, transformations, and the use of graphics libraries in C.
+## Demonstration
 
-## Screenshot
-![screenshot1](map3.jpg)
-![screenshot2](map0.png)
+![Wireframe render of a complex map](map3.jpg)
+*A complex map rendered in isometric view.*
+
+![Wireframe render of a simple map](map0.png)
+*A simple map with height-based coloring.*
 
 ## Features
 
-- **3D Wireframe Rendering**: Generates a 3D wireframe model from a 2D grid of height values.
-- **Isometric Projection**: Displays the 3D model using isometric projection for better visualization.
-- **User Interaction**: Allows users to interact with the model through keyboard inputs, enabling rotation, zoom, and translation.
-- **Color Gradients**: Applies color gradients based on height values to enhance visual representation.
+-   **3D Wireframe Rendering**: Renders complex landscapes from `.fdf` map files.
+-   **Isometric Projection**: Utilizes an isometric projection for a clear 3D perspective.
+-   **Interactive Controls**: Allows real-time camera manipulation, including rotation, translation, and zoom.
+-   **Dynamic Elevation**: Adjust the Z-axis scaling to exaggerate or flatten the terrain.
+-   **Height-Based Coloring**: Applies color gradients to the wireframe based on altitude for better visualization.
 
-## Installation
+## Getting Started
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/jdecorte-be/42-FdF.git
-   cd 42-FdF
-   ```
+### Prerequisites
 
-2. **Compile the Program**:
-   ```bash
-   make
-   ```
+This project is developed for macOS and requires `make` and a C compiler like `clang` or `gcc`.
 
-   This will compile the source code and generate the `fdf` executable.
+### Installation
+
+1.  Clone the repository to your local machine:
+    ```bash
+    git clone https://github.com/jdecorte-be/fdf.git
+    ```
+
+2.  Navigate to the project directory:
+    ```bash
+    cd fdf
+    ```
+
+3.  Compile the project using the Makefile:
+    ```bash
+    make
+    ```
+    This command will build the `fdf` executable.
 
 ## Usage
 
-To run the program, use the following command:
+Run the program by passing a map file as an argument:
 
 ```bash
 ./fdf [path_to_map_file]
 ```
 
-Replace `[path_to_map_file]` with the path to a valid `.fdf` file containing the grid of height values.
+For example: `./fdf maps/test_maps/42.fdf`
 
-**Controls**:
+### Controls
 
-- **Rotation**: Use the arrow keys to rotate the model along the X and Y axes.
-- **Zoom**: Press `+` to zoom in and `-` to zoom out.
-- **Translation**: Use `W`, `A`, `S`, `D` keys to move the model up, left, down, and right, respectively.
-- **Z-axis Scaling**: Adjust the elevation scale using `Page Up` and `Page Down` keys.
+Interact with the 3D model using the following keyboard controls:
 
-## Dependencies
+| Key(s)              | Action                      |
+| :------------------ | :-------------------------- |
+| **Arrow Keys**      | Rotate the model (X/Y axes) |
+| **W, A, S, D**      | Translate (pan) the model   |
+| **`+` / `-`**       | Zoom In / Zoom Out          |
+| **Page Up/Page Down** | Increase / Decrease Z-scale |
+| **ESC**             | Exit the program            |
 
-The project relies on the MiniLibX library for graphics rendering. Ensure that the `minilibx_macos` directory is present and properly configured. The project also includes a custom `libft` for various utility functions.
+## Project Components
 
-## Project Structure
-
-- **src/**: Contains the main source code files for the project.
-- **src_bonus/**: Includes additional features and enhancements.
-- **libft/**: Custom library with utility functions.
-- **minilibx_macos/**: MiniLibX library for macOS.
-- **Makefile**: Build configuration file.
-
-
+-   **`libft/`**: A custom library of standard C utility functions used throughout the project.
+-   **`minilibx_macos/`**: The MiniLibX graphics library, used for windowing, event handling, and drawing pixels on macOS.
+-   **`Makefile`**: Defines the build rules for compiling the project and its dependencies.
