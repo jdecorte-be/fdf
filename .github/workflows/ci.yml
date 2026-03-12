@@ -13,23 +13,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
 
       - name: Install dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y build-essential libx11-dev libxext-dev
-
-      - name: Clone minilibx-linux
-        run: |
-          if [ ! -d "minilibx-linux" ]; then
-            git clone https://github.com/42Paris/minilibx-linux.git minilibx-linux
-          fi
-
-      - name: Patch minilibx for modern GCC
-        run: |
-          sed -i 's/^CFLAGS\t= -O3/CFLAGS\t= -O3 -std=gnu17/' minilibx-linux/Makefile.mk
 
       - name: Build
         run: make
