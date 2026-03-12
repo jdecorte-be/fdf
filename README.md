@@ -1,3 +1,70 @@
+<header>
+<h1 align="center">
+  <a href="https://github.com/jdecorte-be/fdf"><img src=".assets/banner.png" alt="fdf" ></a>
+  fdf
+  <br>
+</h1>
+
+<p align="center">
+  A 42 school graphics project to render a 3D wireframe landscape from a map file. Features isometric projection, transformations, and coloring using MiniLibX.
+</p>
+
+<p align="center">
+<a href="https://www.42.fr/">
+    <img src="https://img.shields.io/badge/42-School%20Project-00B8A9?labelColor=000000"
+         alt="42 School Project">
+  </a>
+<a href="#">
+    <img src="https://img.shields.io/badge/Focus-Computer%20Graphics-4CAF50?labelColor=000000"
+         alt="Focus Computer Graphics">
+  </a>
+<a href="#">
+    <img src="https://img.shields.io/badge/Type-Graphics%20Program-FFA500?labelColor=000000"
+         alt="Type Graphics Program">
+  </a>
+<a href="#">
+    <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Linux-A9A9A9?labelColor=000000"
+         alt="Platform macOS | Linux">
+  </a>
+</p>
+
+<p align="center">
+<a href="#">
+    <img src="https://img.shields.io/badge/Framework-MiniLibX-9F76CF?labelColor=000000"
+         alt="Framework MiniLibX">
+  </a>
+  <a href="https://github.com/jdecorte-be/fdf/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/License-GPL--3.0-AE81FF?labelColor=000000"
+         alt="fdf license">
+  </a>
+  <a href="https://github.com/jdecorte-be/fdf/stargazers">
+    <img src="https://img.shields.io/github/stars/jdecorte-be/fdf?logo=star&logoColor=white&labelColor=000000&color=E6DB74"
+         alt="fdf stars">
+  </a>
+  <a href="https://github.com/jdecorte-be/fdf/issues">
+    <img src="https://img.shields.io/github/issues/jdecorte-be/fdf?logoColor=white&labelColor=000000&color=orange"
+         alt="fdf issues">
+  </a>
+  <a href="https://github.com/jdecorte-be/fdf">
+    <img src="https://img.shields.io/github/repo-size/jdecorte-be/fdf?logo=database&logoColor=white&labelColor=000000&color=AE81FF"
+         alt="fdf repo size">
+  </a>
+  <a href="https://github.com/jdecorte-be/fdf">
+    <img src="https://img.shields.io/github/languages/top/jdecorte-be/fdf?logo=code&logoColor=white&labelColor=000000&color=A6E22E"
+         alt="fdf top language">
+  </a>
+</p>
+<p align="center">
+  <a href="#demonstration">Demonstration</a> •
+  <a href="#features">Features</a> •
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#prerequisites">Prerequisites</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#controls">Controls</a>
+</p>
+</header>
+
 ![FdF Banner](assets/banner.png)
 
 FdF, or *Fil de Fer* (Wireframe), is a graphics programming project from the 42 school curriculum. The goal is to render a 3D wireframe landscape from a 2D map of height data. This project develops core skills in 3D graphics, including projections, transformations, and window management using a graphics library.
