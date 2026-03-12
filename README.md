@@ -65,16 +65,16 @@
 </p>
 </header>
 
-![FdF Banner](assets/banner.png)
+![FdF Banner](.assets/banner.png)
 
 FdF, or *Fil de Fer* (Wireframe), is a graphics programming project from the 42 school curriculum. The goal is to render a 3D wireframe landscape from a 2D map of height data. This project develops core skills in 3D graphics, including projections, transformations, and window management using a graphics library.
 
 ## Demonstration
 
-![Wireframe render of a complex map](map3.jpg)
+![Wireframe render of a complex map](.assets/map3.jpg)
 *A complex map rendered in isometric view.*
 
-![Wireframe render of a simple map](map0.png)
+![Wireframe render of a simple map](.assets/map0.png)
 *A simple map with height-based coloring.*
 
 ## Features
