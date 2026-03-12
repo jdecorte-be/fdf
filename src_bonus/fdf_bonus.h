@@ -14,7 +14,7 @@
 # define FDF_BONUS_H
 
 # include <math.h>
-# include "../minilibx_macos/mlx.h"
+# include "../minilibx-linux/mlx.h"
 # include "../libft/libft.h"
 # include <unistd.h>
 # include <sys/types.h>

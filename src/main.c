@@ -54,22 +54,22 @@ void	show_map(t_fdf *tab)
 
 int	event(int key, t_fdf *tab)
 {
-	if (key == 53)
+	if (key == 65307)
 	{
 		mlx_destroy_window(tab->p_mlx, tab->p_win);
 		exit(0);
 	}
-	if (key == 0)
+	if (key == 97)
 		tab->h_move += 20;
-	if (key == 2)
+	if (key == 100)
 		tab->h_move -= 20;
-	if (key == 13)
+	if (key == 119)
 		tab->v_move += 20;
-	if (key == 1)
+	if (key == 115)
 		tab->v_move -= 20;
-	if (key == 15)
+	if (key == 114)
 		tab->h_view += 0.01;
-	if (key == 3)
+	if (key == 102)
 		tab->h_view -= 0.01;
 	show_map(tab);
 	return (0);

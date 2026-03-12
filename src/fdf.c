@@ -41,18 +41,18 @@ int	fade(int h)
 
 void	projection(float *x, float *y, int *z, t_fdf *tab)
 {
-	int	x_tmp;
-	int	y_tmp;
+	float	x_tmp;
+	float	y_tmp;
 
 	*z = tab->map[(int)*y][(int)*x];
 	*z *= tab->zoom;
 	*z *= tab->h_view;
 	*y *= tab->zoom;
 	*x *= tab->zoom;
-	y_tmp = *y;
 	x_tmp = *x;
-	*x = (*x - *y) * cos(0.8);
-	*y = (*x + *y) * sin(0.8) - *z;
+	y_tmp = *y;
+	*x = (x_tmp - y_tmp) * cos(0.8);
+	*y = (x_tmp + y_tmp) * sin(0.8) - *z;
 }
 
 void	put_pxl(t_fdf *tab, int x, int y, int color)

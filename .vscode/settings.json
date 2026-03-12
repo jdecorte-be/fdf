@@ -1,0 +1,4 @@
+{
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "javascript.updateImportsOnFileMove.enabled": "never"
+}

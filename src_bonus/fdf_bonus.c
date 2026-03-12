@@ -41,8 +41,8 @@ int	fade(int h)
 
 void	projection(float *x, float *y, int *z, t_fdf *tab)
 {
-	int	x_tmp;
-	int	y_tmp;
+	float	x_tmp;
+	float	y_tmp;
 
 	*z = tab->map[(int)*y][(int)*x];
 	*z *= tab->zoom;
